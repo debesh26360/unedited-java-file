@@ -4,44 +4,38 @@ import java.util.Scanner;
 
 public class Karthick 
 {
-     
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         int no;
         int i;
         int total=1;
         float discount;
         System.out.println("menu");
-        System.out.println("101:masaladosa");
-        System.out.println("102:fried rice");
-        System.out.println("103:pavbhaji");
-        
-        
+        System.out.println("1:masaladosa");
+        System.out.println("2:fried rice");
+        System.out.println("3:pavbhaji");
         
       for(i=1;i<=3;i++)
       {
-          System.out.println("enter choise:");
+        System.out.println("enter choice:");
         Scanner obj=new Scanner(System.in);
         no=obj.nextInt();
         
-          
         switch(no)
         {
-            case 101:
+            case 1:
             {
                 System.out.println("item name:masaladosa\nprice=100");
                 total=total+100;
-                
-                
             }
             break;
-            case 102:
+            case 2:
             {
                 System.out.println("item name:fried rice\nprice=120");
                 total=total+120;
             }
             break;
-            case 103:
+            case 3:
                     {
                         System.out.println("item name:pavbhaji\nprice=150");
                         total=total+150;
@@ -51,16 +45,12 @@ public class Karthick
             {
                 System.out.println("invalid choise");
             }
-            
         }
-      } 
+      }
         System.out.println("total;"+total);
         discount=(total*10)/100;
         total=(int) (total-discount);
         System.out.println("discout:"+discount);
         
-        
-        
     }
-    
 }
